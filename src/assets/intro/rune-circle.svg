@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" fill="none">
+  <g stroke="#A875FF" stroke-opacity=".8">
+    <circle cx="200" cy="200" r="192" stroke-width="1" stroke-dasharray="2 10"/>
+    <circle cx="200" cy="200" r="168" stroke-width="1.4"/>
+    <circle cx="200" cy="200" r="160" stroke-width=".8" stroke-opacity=".5" stroke-dasharray="34 14"/>
+    <circle cx="200" cy="200" r="120" stroke-width=".8" stroke-opacity=".45"/>
+  </g>
+  <!-- რუნული ნიშნები წრეზე -->
+  <g stroke="#C9B2FF" stroke-width="2" stroke-linecap="round" stroke-opacity=".9">
+    <path d="M200 18 v16 M194 26 h12"/>
+    <path d="M330 52 l-10 12 M320 52 l10 12"/>
+    <path d="M376 176 h16 M384 168 v16"/>
+    <path d="M352 322 l-12 -8 M340 322 l12 -8 M346 306 v20"/>
+    <path d="M206 372 l-12 -14 M194 372 l12 -14"/>
+    <path d="M62 336 q10 -10 0 -20"/>
+    <path d="M20 210 l14 -8 v16 z" fill="#C9B2FF" fill-opacity=".5"/>
+    <path d="M52 74 h14 M59 67 v14 M52 88 l14 -14"/>
+  </g>
+  <g stroke="#6D38C8" stroke-width="1" stroke-opacity=".55">
+    <path d="M200 40 L232 200 L200 360 L168 200 Z"/>
+    <path d="M60 130 L200 232 L340 130"/>
+    <path d="M60 270 L200 168 L340 270"/>
+  </g>
+</svg>

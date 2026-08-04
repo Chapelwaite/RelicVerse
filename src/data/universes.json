@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "harry-potter",
+    "name": "Harry Potter",
+    "nameKa": "ჰარი პოტერი",
+    "color": "#c9a227",
+    "accent": "#7b2d26",
+    "desc": "ჰოგვორტსის ჯადოსნური სამყარო — ჯოხები, არტეფაქტები და ფაკულტეტების სიმბოლიკა."
+  },
+  {
+    "slug": "fight-club",
+    "name": "Fight Club",
+    "nameKa": "ფაიტ ქლაბი",
+    "color": "#e0483a",
+    "accent": "#2a1010",
+    "desc": "პირველი წესი — არავის უთხრა ფაიტ ქლაბზე. ქურთუკები, სათვალეები და საკულტო დეტალები."
+  },
+  {
+    "slug": "pirates",
+    "name": "Pirates of the Caribbean",
+    "nameKa": "კარიბის ზღვის მეკობრეები",
+    "color": "#2fb6a8",
+    "accent": "#123a3f",
+    "desc": "შავი მარგალიტი, კომპასი და ოკეანის ლეგენდები."
+  },
+  {
+    "slug": "death-note",
+    "name": "Death Note",
+    "nameKa": "სიკვდილის რვეული",
+    "color": "#d33a3a",
+    "accent": "#180d0d",
+    "desc": "რვეული, ვაშლი და შინიგამების სამყარო."
+  },
+  {
+    "slug": "alice",
+    "name": "Alice in Wonderland",
+    "nameKa": "ალისა საოცრებათა ქვეყანაში",
+    "color": "#63d1c0",
+    "accent": "#3a1f4d",
+    "desc": "ჩაის წვეულება, ჩეშირის კატა და თეთრი ბოცვერი."
+  },
+  {
+    "slug": "kill-bill",
+    "name": "Kill Bill",
+    "nameKa": "მოკალი ბილი",
+    "color": "#f2c230",
+    "accent": "#1c1a12",
+    "desc": "ყვითელი კოსტიუმი, კატანა და შურისძიების ესთეტიკა."
+  },
+  {
+    "slug": "the-mentalist",
+    "name": "The Mentalist",
+    "nameKa": "მენტალისტი",
+    "color": "#7fa7d4",
+    "accent": "#16223a",
+    "desc": "პატრიკ ჯეინის ჩაი, სიმშვიდე და წითელი ჯონის კვალი."
+  },
+  {
+    "slug": "ghibli",
+    "name": "Studio Ghibli",
+    "nameKa": "სტუდია გიბლი",
+    "color": "#7fc98a",
+    "accent": "#17301f",
+    "desc": "ტოტორო, კალციფერი და ჯადოსნური ბავშვობის სამყარო."
+  },
+  {
+    "slug": "marvel",
+    "name": "Marvel",
+    "nameKa": "მარველი",
+    "color": "#e23b42",
+    "accent": "#1d0f14",
+    "desc": "სუპერგმირები, არტეფაქტები და უსასრულობის ქვები."
+  },
+  {
+    "slug": "dc",
+    "name": "DC",
+    "nameKa": "დისი",
+    "color": "#3d84e8",
+    "accent": "#0f1730",
+    "desc": "გოთემი, ბეტმენი და ჯოკერის ქაოსი."
+  },
+  {
+    "slug": "disney",
+    "name": "Disney",
+    "nameKa": "დისნეი",
+    "color": "#a58bf0",
+    "accent": "#211540",
+    "desc": "ზღაპრები, ჯადოსნური ლამპები და ბავშვობის სიმბოლოები."
+  },
+  {
+    "slug": "horror-classics",
+    "name": "Horror Classics",
+    "nameKa": "საშინელებათა კლასიკა",
+    "color": "#b0303a",
+    "accent": "#140a0c",
+    "desc": "ნიღბები, ლეგენდები და 80-იანების საშინელებათა ესთეტიკა.",
+    "ageRestricted": true
+  },
+  {
+    "slug": "smurfs",
+    "name": "Smurfs",
+    "nameKa": "სმურფები",
+    "color": "#49aeee",
+    "accent": "#0e2438",
+    "desc": "პატარა ლურჯი სოფლის მკვიდრები და მათი თეთრი ქუდები."
+  },
+  {
+    "slug": "miss-peregrine",
+    "name": "Miss Peregrine",
+    "nameKa": "მის პერეგრინი",
+    "color": "#8fa17a",
+    "accent": "#1b2118",
+    "desc": "უჩვეულო ბავშვების სახლი, მარყუჟები და ჯიბის საათები."
+  },
+  {
+    "slug": "lotr",
+    "name": "Lord of the Rings",
+    "nameKa": "ბეჭდების მბრძანებელი",
+    "color": "#d8b45c",
+    "accent": "#1e1708",
+    "desc": "შუახმელეთი, ერთადერთი ბეჭედი და ელფური ხელოვნება."
+  },
+  {
+    "slug": "anime",
+    "name": "Anime",
+    "nameKa": "ანიმე",
+    "color": "#f07ab0",
+    "accent": "#2a1128",
+    "desc": "შონენის კლასიკა — Naruto, One Piece, Attack on Titan და სხვა."
+  },
+  {
+    "slug": "other",
+    "name": "სხვა",
+    "nameKa": "სხვა სამყაროები",
+    "color": "#9aa4c8",
+    "accent": "#151a2c",
+    "desc": "სერიალები და ფილმები, რომლებმაც თაობა აღზარდეს."
+  }
+]

@@ -1,0 +1,798 @@
+/* ══════════════════════════════════════════════════════════
+   RelicVerse — Cinematic Pinned-Scroll Intro
+   ══════════════════════════════════════════════════════════ */
+
+/* ─────────── Wrapper და pinned სცენა ─────────── */
+.cinematic-intro {
+  position: relative;
+  height: 500vh;
+  height: 500svh;
+  /* ბოლო 100vh გადაფარულია Hero-ზე — გადასვლა უფსკრულის გარეშე */
+  margin-bottom: -100vh;
+  margin-bottom: -100svh;
+  /* Layout-ის header padding-ის კომპენსაცია — სცენა სრულ ეკრანს იკავებს */
+  margin-top: calc(var(--header-h) * -1);
+}
+.cinematic-intro.is-mobile {
+  height: 360vh;
+  height: 360svh;
+}
+
+.ci-scene {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+  z-index: 80;
+  background: #05030a;
+  isolation: isolate;
+}
+.ci-scene.is-done { pointer-events: none; }
+
+/* ─────────── ფონის ფენები ─────────── */
+.ci-bg-base {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(1100px 780px at 50% 44%, #170b2b 0%, #0b0615 52%, #05030a 100%);
+}
+
+.ci-stars {
+  position: absolute;
+  inset: -2%;
+  background-image:
+    radial-gradient(1.6px 1.6px at 11% 21%, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(1px 1px at 24% 66%, rgba(226, 216, 255, 0.75), transparent),
+    radial-gradient(1.8px 1.8px at 43% 14%, rgba(255, 255, 255, 0.65), transparent),
+    radial-gradient(1px 1px at 58% 79%, rgba(240, 171, 252, 0.8), transparent),
+    radial-gradient(1.4px 1.4px at 71% 31%, rgba(255, 255, 255, 0.75), transparent),
+    radial-gradient(1px 1px at 84% 58%, rgba(196, 181, 253, 0.7), transparent),
+    radial-gradient(1.2px 1.2px at 92% 12%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 6% 84%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1.3px 1.3px at 35% 92%, rgba(226, 216, 255, 0.55), transparent),
+    radial-gradient(1px 1px at 66% 5%, rgba(255, 255, 255, 0.5), transparent);
+  animation: ciTwinkle 9s ease-in-out infinite alternate;
+}
+@keyframes ciTwinkle {
+  from { opacity: 0.55; }
+  to { opacity: 1; }
+}
+
+.ci-fog {
+  position: absolute;
+  width: 130vmax;
+  height: 130vmax;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.28;
+  will-change: transform, opacity;
+}
+.ci-fog.f1 {
+  background: radial-gradient(circle, rgba(109, 56, 200, 0.22) 0%, rgba(109, 56, 200, 0.07) 42%, transparent 68%);
+  transform: translate(-56%, -52%);
+  animation: ciFogDrift 34s ease-in-out infinite alternate;
+}
+.ci-fog.f2 {
+  background: radial-gradient(circle, rgba(46, 20, 93, 0.5) 0%, rgba(168, 117, 255, 0.06) 46%, transparent 70%);
+  transform: translate(-44%, -46%);
+  animation: ciFogDrift 46s ease-in-out infinite alternate-reverse;
+}
+@keyframes ciFogDrift {
+  from { transform: translate(-56%, -52%) rotate(0deg) scale(1); }
+  to { transform: translate(-46%, -48%) rotate(9deg) scale(1.12); }
+}
+
+.ci-bg-rune {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(148vmin, 1050px);
+  transform: translate(-50%, -50%);
+  opacity: 0.05;
+  animation: ciSlowSpin 140s linear infinite;
+  will-change: transform;
+}
+@keyframes ciSlowSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ─────────── მშვიდი ფინალური ფონი ─────────── */
+.ci-calm {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background:
+    radial-gradient(900px 620px at 50% 30%, rgba(109, 56, 200, 0.34), transparent 62%),
+    radial-gradient(760px 560px at 82% 84%, rgba(217, 70, 239, 0.12), transparent 60%),
+    linear-gradient(180deg, #0e0720 0%, #05030a 100%);
+}
+
+/* ─────────── Cinematic grain ─────────── */
+.ci-grain {
+  position: absolute;
+  inset: -60px;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image:
+    radial-gradient(1px 1px at 12% 34%, #fff, transparent),
+    radial-gradient(1px 1px at 44% 12%, #fff, transparent),
+    radial-gradient(1px 1px at 74% 56%, #fff, transparent),
+    radial-gradient(1px 1px at 28% 78%, #fff, transparent),
+    radial-gradient(1px 1px at 91% 23%, #fff, transparent),
+    radial-gradient(1px 1px at 58% 89%, #fff, transparent);
+  background-size: 220px 220px;
+  animation: ciGrain 0.9s steps(3) infinite;
+}
+@keyframes ciGrain {
+  0% { transform: translate(0, 0); }
+  33% { transform: translate(-14px, 9px); }
+  66% { transform: translate(11px, -13px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* ─────────── მტვრის ნაწილაკები ─────────── */
+.ci-dust {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+.ci-dust span {
+  position: absolute;
+  border-radius: 50%;
+  background: #cdbcff;
+  box-shadow: 0 0 6px rgba(168, 117, 255, 0.9);
+  animation: ciFloatDust linear infinite;
+  will-change: transform;
+}
+.ci-dust span.is-pink { background: #f0abfc; box-shadow: 0 0 7px rgba(240, 171, 252, 0.9); }
+@keyframes ciFloatDust {
+  0% { transform: translate3d(0, 0, 0); }
+  25% { transform: translate3d(2.2vw, -3.4vh, 0); }
+  50% { transform: translate3d(-1.6vw, -6.6vh, 0); }
+  75% { transform: translate3d(1.2vw, -3vh, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+/* ─────────── ცენტრალური ნაპერწკალი ─────────── */
+.ci-spark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  margin: -3.5px;
+  border-radius: 50%;
+  background: #e9d5ff;
+  box-shadow:
+    0 0 12px 4px rgba(168, 117, 255, 0.9),
+    0 0 44px 16px rgba(109, 56, 200, 0.5);
+  animation: ciSparkPulse 2.6s ease-in-out infinite;
+}
+@keyframes ciSparkPulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.7); }
+}
+
+/* ─────────── რელიკვია ─────────── */
+.ci-relic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(46vmin, 340px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+}
+.ci-relic-inner {
+  position: relative;
+  display: grid;
+  place-items: center;
+  animation: ciRelicFloat 7s ease-in-out infinite;
+}
+@keyframes ciRelicFloat {
+  0%, 100% { transform: translateY(-8px) rotate(-2deg); }
+  50% { transform: translateY(10px) rotate(2.5deg); }
+}
+.ci-relic-halo {
+  position: absolute;
+  width: 190%;
+  height: 190%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(168, 117, 255, 0.4) 0%, rgba(109, 56, 200, 0.14) 42%, transparent 66%);
+  animation: ciHaloPulse 4.4s ease-in-out infinite;
+}
+@keyframes ciHaloPulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+.ci-relic-gem { filter: drop-shadow(0 0 22px rgba(168, 117, 255, 0.65)); }
+.ci-relic-heart {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #f5f3ff;
+  box-shadow: 0 0 20px 8px rgba(240, 171, 252, 0.75);
+  animation: ciSparkPulse 1.9s ease-in-out infinite;
+}
+.ci-orbit {
+  position: absolute;
+  inset: 0;
+  animation: ciOrbitSpin linear infinite;
+}
+.ci-orbit.o1 { animation-duration: 9s; }
+.ci-orbit.o2 { animation-duration: 14s; animation-direction: reverse; transform: rotate(120deg); }
+.ci-orbit.o3 { animation-duration: 19s; transform: rotate(240deg); }
+.ci-orbit i {
+  position: absolute;
+  left: 50%;
+  top: -4%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #f0abfc;
+  box-shadow: 0 0 10px rgba(240, 171, 252, 0.95);
+}
+.ci-orbit.o2 i { background: #c4b5fd; width: 4px; height: 4px; }
+.ci-orbit.o3 i { background: #e9d5ff; width: 3.4px; height: 3.4px; }
+@keyframes ciOrbitSpin { to { transform: rotate(360deg); } }
+
+.ci-relic-runes {
+  position: absolute;
+  inset: -14%;
+  opacity: 0;
+  visibility: hidden;
+  animation: ciSlowSpin 60s linear infinite reverse;
+}
+
+/* ─────────── პორტალი ─────────── */
+.ci-portal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(92vmin, 720px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  will-change: transform, opacity;
+}
+.ci-portal > * { grid-area: 1 / 1; }
+
+.ci-portal-runes {
+  width: 58%;
+  opacity: 0;
+  visibility: hidden;
+  animation: ciSlowSpin 46s linear infinite;
+}
+.ci-portal-runes img { width: 100%; }
+
+.ci-ring {
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform;
+}
+.ci-ring svg { width: 100%; height: 100%; }
+.ci-ring-mid { width: 84%; }
+
+.ci-portal-core {
+  position: relative;
+  width: 62%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  background:
+    radial-gradient(circle at 50% 50%,
+      rgba(245, 243, 255, 0.95) 0%,
+      rgba(168, 117, 255, 0.85) 14%,
+      rgba(109, 56, 200, 0.65) 34%,
+      rgba(23, 11, 43, 0.95) 74%,
+      rgba(5, 3, 10, 1) 100%);
+  box-shadow:
+    0 0 70px 24px rgba(109, 56, 200, 0.5),
+    inset 0 0 90px 30px rgba(5, 3, 10, 0.85);
+  overflow: hidden;
+  will-change: transform, opacity;
+}
+.ci-portal-world {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.ci-world-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(26px);
+}
+.ci-world-blob.b1 { width: 46%; height: 46%; left: 12%; top: 20%; background: rgba(47, 182, 168, 0.55); animation: ciBlobDrift 11s ease-in-out infinite alternate; }
+.ci-world-blob.b2 { width: 38%; height: 38%; right: 10%; top: 12%; background: rgba(233, 196, 106, 0.4); animation: ciBlobDrift 13s ease-in-out infinite alternate-reverse; }
+.ci-world-blob.b3 { width: 52%; height: 52%; left: 26%; bottom: 6%; background: rgba(224, 72, 138, 0.42); animation: ciBlobDrift 15s ease-in-out infinite alternate; }
+@keyframes ciBlobDrift {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(9%, -7%) scale(1.16); }
+}
+.ci-world-stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1.5px 1.5px at 22% 32%, #fff, transparent),
+    radial-gradient(1px 1px at 64% 18%, #fff, transparent),
+    radial-gradient(1.4px 1.4px at 78% 62%, #fff, transparent),
+    radial-gradient(1px 1px at 38% 74%, #fff, transparent);
+  opacity: 0.8;
+}
+.ci-portal-rays {
+  position: absolute;
+  inset: -12%;
+  background: conic-gradient(from 0deg,
+    transparent 0deg 26deg, rgba(233, 213, 255, 0.09) 30deg 34deg,
+    transparent 38deg 92deg, rgba(233, 213, 255, 0.07) 96deg 100deg,
+    transparent 104deg 180deg, rgba(233, 213, 255, 0.08) 186deg 191deg,
+    transparent 196deg 268deg, rgba(233, 213, 255, 0.07) 272deg 276deg,
+    transparent 280deg 360deg);
+  animation: ciSlowSpin 26s linear infinite;
+}
+
+/* ─────────── გაელვება ─────────── */
+.ci-flash {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, rgba(245, 243, 255, 0.95) 0%, rgba(168, 117, 255, 0.5) 32%, transparent 66%);
+}
+
+/* ─────────── მოგონებების რელიკვიები (ორბიტა + light trails) ─────────── */
+.ci-silhouettes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+.ci-orb {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 21vmin;
+  height: 21vmin;
+  margin: -10.5vmin 0 0 -10.5vmin;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity, filter;
+}
+.ci-orb img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  /* რბილი კიდეები — ნივთი „მოგონების ფანჯარასავით" ჩანს */
+  -webkit-mask-image: radial-gradient(circle, #000 44%, transparent 70%);
+  mask-image: radial-gradient(circle, #000 44%, transparent 70%);
+}
+.ci-orb-fg { width: 25vmin; height: 25vmin; margin: -12.5vmin 0 0 -12.5vmin; z-index: 3; }
+.ci-orb-mid { z-index: 2; }
+.ci-orb-bg { width: 17vmin; height: 17vmin; margin: -8.5vmin 0 0 -8.5vmin; z-index: 1; }
+
+/* სამყაროს ფერის light trail — ორბიტის ტანგენტზე */
+.ci-orb-trail {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 190%;
+  height: 26%;
+  margin: -13% 0 0 -95%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent 4%, var(--trail, #a875ff) 50%, transparent 96%);
+  opacity: 0;
+  visibility: hidden;
+  filter: blur(9px);
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+/* ─────────── ქართული ტექსტი — mask reveal სისტემა ───────────
+   გარე .ci-line-mask: overflow hidden + საკმარისი vertical padding,
+   რომ ქართული ასოების ზედა/ქვედა ნაწილები არასდროს მოიჭრას.
+   შიდა .ci-line: მხოლოდ transform/opacity/blur ანიმაცია —
+   letterSpacing/clipPath/scale ტექსტზე არ გამოიყენება. */
+.ci-line-mask {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90vw, 820px);
+  overflow: hidden;
+  /* პადინგი mask-ის შიგნით — ასოები reveal-ის დროსაც სრულად ჩანს */
+  padding-block: 0.34em;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.ci-line {
+  font-family: 'Noto Sans Georgian', 'FiraGO', var(--font-ka);
+  font-size: clamp(1.35rem, 3.1vw, 2.3rem);
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  padding-block: 0.12em;
+  overflow: visible;
+  text-wrap: balance;
+  color: var(--text);
+  text-shadow: 0 2px 30px rgba(5, 3, 10, 0.95), 0 0 46px rgba(109, 56, 200, 0.4);
+  will-change: transform, filter;
+}
+.ci-size-lg .ci-line, .ci-line.ci-size-lg { font-size: clamp(1.7rem, 4vw, 3rem); font-weight: 800; }
+.ci-size-sm .ci-line, .ci-line.ci-size-sm { font-size: clamp(1rem, 2.1vw, 1.5rem); font-weight: 600; color: var(--text-soft); }
+
+.ci-pos-center { top: 50%; translate: 0 -50%; }
+.ci-pos-low { top: 71%; }
+.ci-pos-high { top: 15%; }
+.ci-mask-static { position: static; left: auto; transform: none; width: auto; }
+
+/* ტექსტის „დაშლის" ნაწილაკები */
+.ci-dissolve {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.ci-dissolve span {
+  position: absolute;
+  border-radius: 50%;
+  background: #e9d5ff;
+  box-shadow: 0 0 10px rgba(168, 117, 255, 0.95);
+}
+
+/* ─────────── ბრენდის ფინალი ─────────── */
+.ci-brand {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 14px;
+  text-align: center;
+  will-change: transform, opacity;
+}
+.ci-brand-symbol {
+  width: clamp(64px, 10vmin, 96px);
+  filter: drop-shadow(0 0 26px rgba(168, 117, 255, 0.75));
+  opacity: 0;
+  visibility: hidden;
+  animation: ciHaloPulse 3.6s ease-in-out infinite;
+}
+.ci-wordmark {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0.08em 0.3em;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 9vw, 5.2rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+.ci-letters { display: inline-flex; }
+.ci-letter {
+  display: inline-block;
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  visibility: hidden;
+  filter: drop-shadow(0 0 22px rgba(168, 117, 255, 0.45));
+  will-change: transform, opacity;
+}
+.ci-brand-tagline {
+  font-size: clamp(0.95rem, 2.2vw, 1.25rem);
+  color: var(--text-soft);
+  text-shadow: 0 2px 24px rgba(5, 3, 10, 0.9);
+}
+.ci-brand .ci-line-mask { width: min(88vw, 640px); }
+.ci-brand-triad {
+  display: flex;
+  gap: 6px;
+  font-size: clamp(0.78rem, 1.7vw, 0.95rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--violet-300);
+  font-weight: 700;
+}
+.ci-brand-triad span { opacity: 0; visibility: hidden; display: inline-block; }
+.ci-brand-triad i { font-style: normal; color: var(--pink); }
+
+/* ─────────── ფინალური ნათება ─────────── */
+.ci-final-glow {
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  width: 130vmin;
+  height: 90vmin;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(109, 56, 200, 0.4) 0%, rgba(109, 56, 200, 0.1) 46%, transparent 70%);
+  filter: blur(4px);
+}
+
+.ci-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 90% at 50% 50%, transparent 58%, rgba(3, 2, 7, 0.72) 100%);
+}
+
+/* ─────────── Scroll მინიშნება ─────────── */
+.ci-hint {
+  position: absolute;
+  left: 50%;
+  bottom: max(26px, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.ci-hint-mouse {
+  width: 24px;
+  height: 38px;
+  border: 1.6px solid rgba(168, 117, 255, 0.65);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+  box-shadow: 0 0 18px rgba(109, 56, 200, 0.35);
+}
+.ci-hint-mouse i {
+  width: 3px;
+  height: 8px;
+  border-radius: 3px;
+  background: var(--violet-300);
+  animation: ciWheel 1.7s ease-in-out infinite;
+}
+@keyframes ciWheel {
+  0% { transform: translateY(0); opacity: 1; }
+  70% { transform: translateY(12px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+
+/* ─────────── Overlay UI (skip / sound / progress) ─────────── */
+.ci-ui { position: relative; z-index: 1300; }
+
+.ci-skip {
+  position: fixed;
+  top: max(16px, env(safe-area-inset-top));
+  right: 18px;
+  z-index: 1300;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  border-radius: var(--r-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-soft);
+  background: rgba(15, 9, 32, 0.55);
+  border: 1px solid rgba(168, 117, 255, 0.28);
+  backdrop-filter: blur(10px);
+  transition: all var(--t-fast) var(--ease);
+}
+.ci-skip:hover {
+  color: #fff;
+  border-color: rgba(168, 117, 255, 0.6);
+  box-shadow: 0 0 22px rgba(109, 56, 200, 0.45);
+  transform: translateY(-1px);
+}
+
+.ci-sound {
+  position: fixed;
+  top: max(16px, env(safe-area-inset-top));
+  left: 18px;
+  z-index: 1300;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 14px;
+  border-radius: var(--r-full);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: rgba(15, 9, 32, 0.55);
+  border: 1px solid rgba(168, 117, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all var(--t-fast) var(--ease);
+}
+.ci-sound:hover:not(:disabled) { color: #fff; border-color: rgba(168, 117, 255, 0.5); }
+.ci-sound.is-on { color: var(--violet-200); border-color: rgba(168, 117, 255, 0.55); box-shadow: 0 0 18px rgba(109, 56, 200, 0.4); }
+.ci-sound:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.ci-progress {
+  position: fixed;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1300;
+  display: flex;
+  gap: 14px;
+  align-items: stretch;
+}
+.ci-progress-track {
+  width: 2px;
+  border-radius: 2px;
+  background: rgba(168, 117, 255, 0.18);
+  overflow: hidden;
+}
+.ci-progress-fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  background: linear-gradient(180deg, #a875ff, #f0abfc);
+  box-shadow: 0 0 12px rgba(168, 117, 255, 0.8);
+  will-change: transform;
+}
+.ci-progress ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 26px;
+  padding-block: 2px;
+}
+.ci-progress li {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  opacity: 0.4;
+  transition: opacity var(--t-mid) var(--ease), transform var(--t-mid) var(--ease);
+}
+.ci-progress li.is-active { opacity: 1; transform: translateX(-3px); }
+.ci-step-id {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  color: var(--violet-300);
+  letter-spacing: 0.1em;
+}
+.ci-step-label { font-size: 0.68rem; color: var(--text-muted); letter-spacing: 0.04em; }
+.ci-progress li.is-active .ci-step-label { color: var(--text); }
+
+@media (max-width: 900px) {
+  .ci-progress ol { display: none; }
+  .ci-progress { right: 12px; }
+  .ci-skip { right: 12px; padding: 8px 13px; }
+  .ci-sound { left: 12px; }
+  .ci-sound span { display: none; }
+}
+
+/* ─────────── Header/UI-ის დამალვა intro-ს დროს ─────────── */
+body.rv-intro-hide .header,
+body.rv-intro-hide .bottom-nav {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+body.rv-intro-hide .cookie-bar,
+body.rv-intro-reveal .cookie-bar,
+body.rv-intro-hide .back-to-top,
+body.rv-intro-reveal .back-to-top,
+body.rv-intro-hide .compare-bar,
+body.rv-intro-reveal .compare-bar {
+  display: none !important;
+}
+
+/* ─────────── Header-ის ეტაპობრივი გამოჩენა ─────────── */
+@keyframes ciHeaderIn {
+  from { opacity: 0; transform: translateY(-14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes ciItemIn {
+  from { opacity: 0; transform: translateY(-9px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+body.rv-intro-reveal .header { animation: ciHeaderIn 0.55s var(--ease) both; }
+body.rv-intro-reveal .header .logo { animation: ciItemIn 0.5s 0.08s var(--ease) both; }
+body.rv-intro-reveal .header .nav-link { animation: ciItemIn 0.45s var(--ease) both; }
+body.rv-intro-reveal .header .nav-link:nth-child(1) { animation-delay: 0.2s; }
+body.rv-intro-reveal .header .nav-link:nth-child(2) { animation-delay: 0.26s; }
+body.rv-intro-reveal .header .nav-link:nth-child(3) { animation-delay: 0.32s; }
+body.rv-intro-reveal .header .nav-link:nth-child(4) { animation-delay: 0.38s; }
+body.rv-intro-reveal .header .nav-link:nth-child(5) { animation-delay: 0.44s; }
+body.rv-intro-reveal .header .nav-link:nth-child(6) { animation-delay: 0.5s; }
+body.rv-intro-reveal .header .header-actions > * { animation: ciItemIn 0.4s var(--ease) both; }
+body.rv-intro-reveal .header .header-actions > *:nth-child(1) { animation-delay: 0.58s; }
+body.rv-intro-reveal .header .header-actions > *:nth-child(2) { animation-delay: 0.64s; }
+body.rv-intro-reveal .header .header-actions > *:nth-child(3) { animation-delay: 0.7s; }
+body.rv-intro-reveal .header .header-actions > *:nth-child(4) { animation-delay: 0.76s; }
+body.rv-intro-reveal .header .header-actions > *:nth-child(5) { animation-delay: 0.82s; }
+body.rv-intro-reveal .bottom-nav { animation: ciHeaderIn 0.5s 0.3s var(--ease) both; }
+
+/* ─────────── მოკლე ვერსია (მეორე ვიზიტი / reduced motion) ─────────── */
+.ci-short {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  background: #05030a;
+  pointer-events: none;
+  animation: ciShortFade 1.5s ease-in-out both;
+}
+.ci-short-inner {
+  position: relative;
+  display: grid;
+  place-items: center;
+  gap: 14px;
+}
+.ci-short-inner img { width: 74px; animation: ciShortSymbol 1.5s ease-out both; }
+.ci-short-inner strong {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.ci-short-glow {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(109, 56, 200, 0.45), transparent 70%);
+  animation: ciShortGlow 1.5s ease-out both;
+}
+@keyframes ciShortFade {
+  0% { opacity: 1; }
+  72% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes ciShortSymbol {
+  0% { opacity: 0; transform: scale(0.6); }
+  35% { opacity: 1; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.05); }
+}
+@keyframes ciShortGlow {
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; transform: scale(1.25); }
+}
+
+/* ─────────── Reduced motion ─────────── */
+@media (prefers-reduced-motion: reduce) {
+  .ci-short, .ci-short-inner img, .ci-short-glow { animation-duration: 1.2s !important; }
+  .ci-dust span, .ci-stars, .ci-fog, .ci-orbit, .ci-relic-inner { animation: none !important; }
+}
+
+/* ─────────── მობილური ─────────── */
+@media (max-width: 768px) {
+  .ci-fog { filter: none; }
+  .ci-portal { width: min(96vmin, 480px); }
+  .ci-relic { width: min(56vmin, 260px); }
+  .ci-pos-low { top: 73%; }
+  .ci-pos-high { top: 12%; }
+  .ci-line { font-size: clamp(1.15rem, 4.6vw, 1.6rem); }
+  .ci-sil { box-shadow: 0 0 24px rgba(109, 56, 200, 0.4); }
+  .ci-grain { display: none; }
+  .ci-final-glow { filter: none; }
+}

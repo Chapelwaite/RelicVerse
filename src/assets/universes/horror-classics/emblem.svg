@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+<defs>
+  <linearGradient id="eg" x1="0" y1="0" x2=".4" y2="1">
+    <stop offset="0%" stop-color="#d8d2c8"/><stop offset="100%" stop-color="#b0303a"/>
+  </linearGradient>
+  <filter id="es" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#b0303a" flood-opacity=".7"/></filter>
+</defs>
+<g filter="url(#es)">
+    <circle cx="60" cy="60" r="45" stroke="#b0303a" stroke-opacity=".55" stroke-width="2" stroke-dasharray="2 8"/>
+    <path d="M60 26 c-15 0 -24 11 -24 27 c0 18 10 36 24 41 c14 -5 24 -23 24 -41 c0 -16 -9 -27 -24 -27 z" fill="#0d0a0c" stroke="#d8d2c8" stroke-width="2.6"/>
+    <ellipse cx="51" cy="56" rx="5.4" ry="7.4" fill="#b0303a"/>
+    <ellipse cx="69" cy="56" rx="5.4" ry="7.4" fill="#b0303a"/>
+    <path d="M60 66 l-3.4 8 h6.8 z" fill="#b0303a" opacity=".85"/>
+    <path d="M52 82 q8 5 16 0" stroke="#b0303a" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M84 34 q3 7 0 12" stroke="#b0303a" stroke-width="2.4" stroke-linecap="round"/></g></svg>

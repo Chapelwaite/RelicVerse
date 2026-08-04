@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" fill="none">
+  <defs>
+    <linearGradient id="rvs-gem" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#F5F3FF"/>
+      <stop offset="42%" stop-color="#A875FF"/>
+      <stop offset="100%" stop-color="#6D38C8"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="48" cy="48" rx="42" ry="17" stroke="#A875FF" stroke-opacity=".6" stroke-width="2" transform="rotate(-24 48 48)"/>
+  <ellipse cx="48" cy="48" rx="42" ry="17" stroke="#F0ABFC" stroke-opacity=".32" stroke-width="1.6" transform="rotate(28 48 48)"/>
+  <path d="M48 10 L68 38 L48 86 L28 38 Z" fill="url(#rvs-gem)"/>
+  <path d="M48 10 L68 38 L48 86 Z" fill="#0B0615" fill-opacity=".2"/>
+  <path d="M28 38 H68" stroke="#F5F3FF" stroke-opacity=".55" stroke-width="1.6"/>
+  <circle cx="76" cy="22" r="3" fill="#F0ABFC"/>
+  <circle cx="18" cy="68" r="2.2" fill="#C4B5FD" fill-opacity=".85"/>
+</svg>

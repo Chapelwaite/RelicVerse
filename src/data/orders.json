@@ -1,0 +1,749 @@
+[
+  {
+    "id": "RV-2026-00101",
+    "userId": null,
+    "customer": {
+      "firstName": "მარიამ",
+      "lastName": "ჯანელიძე",
+      "phone": "+995556899256",
+      "email": "მარიამ1@example.ge",
+      "city": "ზუგდიდი",
+      "address": "ვაჟა-ფშაველას გამზირი 60",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-047",
+        "name": "ჯადოსნური ლამპა",
+        "slug": "magic-lamp",
+        "image": "/products/rv-047-1.svg",
+        "price": 46.9,
+        "quantity": 1
+      },
+      {
+        "productId": "rv-043",
+        "name": "ღამურას ლოგოს ჭიქა",
+        "slug": "bat-logo-mug",
+        "image": "/products/rv-043-1.svg",
+        "price": 23.9,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 94.7,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 101.7,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "ნაღდი კურიერთან",
+    "status": "მიწოდებული",
+    "createdAt": "2026-07-29T10:36:47.407Z",
+    "updatedAt": "2026-07-29T10:36:47.407Z"
+  },
+  {
+    "id": "RV-2026-00102",
+    "userId": null,
+    "customer": {
+      "firstName": "გიორგი",
+      "lastName": "მაისურაძე",
+      "phone": "+995581654620",
+      "email": "გიორგი2@example.ge",
+      "city": "რუსთავი",
+      "address": "ვაჟა-ფშაველას გამზირი 51",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-051",
+        "name": "ერთადერთი ბეჭედი",
+        "slug": "the-one-ring",
+        "image": "/products/rv-051-1.svg",
+        "price": 39,
+        "quantity": 2
+      },
+      {
+        "productId": "rv-037",
+        "name": "კალციფერის ღამის სანათი",
+        "slug": "calcifer-night-light",
+        "image": "/products/rv-037-1.svg",
+        "price": 56,
+        "quantity": 1
+      },
+      {
+        "productId": "rv-047",
+        "name": "ჯადოსნური ლამპა",
+        "slug": "magic-lamp",
+        "image": "/products/rv-047-1.svg",
+        "price": 46.9,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 227.8,
+    "shipping": 0,
+    "discount": 0,
+    "promoCode": null,
+    "total": 227.8,
+    "shippingMethod": "თვითგატანა",
+    "paymentMethod": "საბანკო გადარიცხვა",
+    "status": "ახალი",
+    "createdAt": "2026-07-09T22:17:27.676Z",
+    "updatedAt": "2026-07-09T22:17:27.676Z"
+  },
+  {
+    "id": "RV-2026-00103",
+    "userId": null,
+    "customer": {
+      "firstName": "საბა",
+      "lastName": "გოგოლაძე",
+      "phone": "+995595383621",
+      "email": "საბა3@example.ge",
+      "city": "თბილისი",
+      "address": "ვაჟა-ფშაველას გამზირი 87",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-034",
+        "name": "ემა ბლუმის ტყვიის ჩექმები",
+        "slug": "emma-bloom-boots",
+        "image": "/products/rv-034-1.svg",
+        "price": 88,
+        "quantity": 1
+      },
+      {
+        "productId": "rv-023",
+        "name": "ჯეკ ბეღურას კომპასი",
+        "slug": "jack-sparrow-compass",
+        "image": "/products/rv-023-1.svg",
+        "price": 64.9,
+        "quantity": 2
+      },
+      {
+        "productId": "rv-028",
+        "name": "„წითელი ჯონის\" სანიშნე",
+        "slug": "red-john-bookmark",
+        "image": "/products/rv-028-1.svg",
+        "price": 12.9,
+        "quantity": 1
+      }
+    ],
+    "subtotal": 230.7,
+    "shipping": 0,
+    "discount": 0,
+    "promoCode": null,
+    "total": 230.7,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "ბარათი (დემო)",
+    "status": "მიწოდებული",
+    "createdAt": "2026-07-26T05:37:39.738Z",
+    "updatedAt": "2026-07-26T05:37:39.738Z"
+  },
+  {
+    "id": "RV-2026-00104",
+    "userId": null,
+    "customer": {
+      "firstName": "საბა",
+      "lastName": "გოგოლაძე",
+      "phone": "+995590202485",
+      "email": "საბა4@example.ge",
+      "city": "თბილისი",
+      "address": "ვაჟა-ფშაველას გამზირი 88",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-011",
+        "name": "Fight Club — მინიმალისტური პოსტერი",
+        "slug": "fight-club-poster",
+        "image": "/products/rv-011-1.svg",
+        "price": 22.9,
+        "quantity": 1
+      }
+    ],
+    "subtotal": 22.9,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 29.9,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "ბარათი (დემო)",
+    "status": "გაუქმებული",
+    "createdAt": "2026-07-12T03:54:39.740Z",
+    "updatedAt": "2026-07-12T03:54:39.740Z"
+  },
+  {
+    "id": "RV-2026-00105",
+    "userId": null,
+    "customer": {
+      "firstName": "დათო",
+      "lastName": "ხვედელიძე",
+      "phone": "+995593773878",
+      "email": "დათო5@example.ge",
+      "city": "რუსთავი",
+      "address": "ვაჟა-ფშაველას გამზირი 87",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-048",
+        "name": "ყურებიანი ქუდი",
+        "slug": "mouse-ears-hat",
+        "image": "/products/rv-048-1.svg",
+        "price": 29.9,
+        "quantity": 2
+      },
+      {
+        "productId": "rv-042",
+        "name": "სკიპტრის ფორმის სანიშნე",
+        "slug": "scepter-bookmark",
+        "image": "/products/rv-042-1.svg",
+        "price": 14.9,
+        "quantity": 1
+      }
+    ],
+    "subtotal": 74.7,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 81.7,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "ბარათი (დემო)",
+    "status": "გაუქმებული",
+    "createdAt": "2026-07-23T00:14:22.073Z",
+    "updatedAt": "2026-07-23T00:14:22.073Z"
+  },
+  {
+    "id": "RV-2026-00106",
+    "userId": null,
+    "customer": {
+      "firstName": "მარიამ",
+      "lastName": "ჯანელიძე",
+      "phone": "+995568902355",
+      "email": "მარიამ6@example.ge",
+      "city": "ბათუმი",
+      "address": "ვაჟა-ფშაველას გამზირი 52",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-025",
+        "name": "მეკობრის მედალიონი",
+        "slug": "pirate-medallion",
+        "image": "/products/rv-025-1.svg",
+        "price": 38.9,
+        "quantity": 2
+      },
+      {
+        "productId": "rv-020",
+        "name": "„დამლიე მე\" — ბოთლის ყელსაბამი",
+        "slug": "drink-me-necklace",
+        "image": "/products/rv-020-1.svg",
+        "price": 26.9,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 131.6,
+    "shipping": 0,
+    "discount": 0,
+    "promoCode": null,
+    "total": 131.6,
+    "shippingMethod": "თვითგატანა",
+    "paymentMethod": "ბარათი (დემო)",
+    "status": "გაგზავნილი",
+    "createdAt": "2026-07-27T22:40:42.107Z",
+    "updatedAt": "2026-07-27T22:40:42.107Z"
+  },
+  {
+    "id": "RV-2026-00107",
+    "userId": null,
+    "customer": {
+      "firstName": "ლუკა",
+      "lastName": "ტაბატაძე",
+      "phone": "+995557356443",
+      "email": "ლუკა7@example.ge",
+      "city": "თელავი",
+      "address": "ვაჟა-ფშაველას გამზირი 39",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-050",
+        "name": "ლურჯი სმურფის ქუდი",
+        "slug": "blue-smurf-hat",
+        "image": "/products/rv-050-1.svg",
+        "price": 17.9,
+        "quantity": 1
+      }
+    ],
+    "subtotal": 17.9,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 24.9,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "საბანკო გადარიცხვა",
+    "status": "გაგზავნილი",
+    "createdAt": "2026-07-27T12:30:54.599Z",
+    "updatedAt": "2026-07-27T12:30:54.599Z"
+  },
+  {
+    "id": "RV-2026-00108",
+    "userId": null,
+    "customer": {
+      "firstName": "ანა",
+      "lastName": "ბერიძე",
+      "phone": "+995571932156",
+      "email": "ანა8@example.ge",
+      "city": "ქუთაისი",
+      "address": "ვაჟა-ფშაველას გამზირი 82",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-046",
+        "name": "ნაჭუჭის ყელსაბამი",
+        "slug": "shell-necklace",
+        "image": "/products/rv-046-1.svg",
+        "price": 34.9,
+        "quantity": 1
+      },
+      {
+        "productId": "rv-043",
+        "name": "ღამურას ლოგოს ჭიქა",
+        "slug": "bat-logo-mug",
+        "image": "/products/rv-043-1.svg",
+        "price": 23.9,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 82.7,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 89.7,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "ნაღდი კურიერთან",
+    "status": "მიწოდებული",
+    "createdAt": "2026-07-27T19:35:14.583Z",
+    "updatedAt": "2026-07-27T19:35:14.583Z"
+  },
+  {
+    "id": "RV-2026-00109",
+    "userId": null,
+    "customer": {
+      "firstName": "გიორგი",
+      "lastName": "მაისურაძე",
+      "phone": "+995529011019",
+      "email": "გიორგი9@example.ge",
+      "city": "რუსთავი",
+      "address": "ვაჟა-ფშაველას გამზირი 47",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-025",
+        "name": "მეკობრის მედალიონი",
+        "slug": "pirate-medallion",
+        "image": "/products/rv-025-1.svg",
+        "price": 38.9,
+        "quantity": 2
+      },
+      {
+        "productId": "rv-018",
+        "name": "L-ის სიმბოლოს ჭიქა",
+        "slug": "l-symbol-mug",
+        "image": "/products/rv-018-1.svg",
+        "price": 21.9,
+        "quantity": 1
+      }
+    ],
+    "subtotal": 99.7,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 106.7,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "ბარათი (დემო)",
+    "status": "გაგზავნილი",
+    "createdAt": "2026-07-20T12:58:05.170Z",
+    "updatedAt": "2026-07-20T12:58:05.170Z"
+  },
+  {
+    "id": "RV-2026-00110",
+    "userId": null,
+    "customer": {
+      "firstName": "ნინო",
+      "lastName": "კვარაცხელია",
+      "phone": "+995527333452",
+      "email": "ნინო10@example.ge",
+      "city": "რუსთავი",
+      "address": "ვაჟა-ფშაველას გამზირი 7",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-036",
+        "name": "ტოტოროს რბილი ფიგურა",
+        "slug": "totoro-plush",
+        "image": "/products/rv-036-1.svg",
+        "price": 42.9,
+        "quantity": 2
+      },
+      {
+        "productId": "rv-056",
+        "name": "ალფავიტის კედლის დეკორი — 80s",
+        "slug": "alphabet-wall-decor",
+        "image": "/products/rv-056-1.svg",
+        "price": 42,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 169.8,
+    "shipping": 0,
+    "discount": 0,
+    "promoCode": null,
+    "total": 169.8,
+    "shippingMethod": "თვითგატანა",
+    "paymentMethod": "ბარათი (დემო)",
+    "status": "მიწოდებული",
+    "createdAt": "2026-07-12T04:24:52.292Z",
+    "updatedAt": "2026-07-12T04:24:52.292Z"
+  },
+  {
+    "id": "RV-2026-00111",
+    "userId": null,
+    "customer": {
+      "firstName": "დათო",
+      "lastName": "ხვედელიძე",
+      "phone": "+995553856555",
+      "email": "დათო11@example.ge",
+      "city": "რუსთავი",
+      "address": "ვაჟა-ფშაველას გამზირი 43",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-017",
+        "name": "რიუკის ფიგურა",
+        "slug": "ryuk-figure",
+        "image": "/products/rv-017-1.svg",
+        "price": 69,
+        "quantity": 1
+      }
+    ],
+    "subtotal": 69,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 76,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "ნაღდი კურიერთან",
+    "status": "ახალი",
+    "createdAt": "2026-07-16T05:10:06.501Z",
+    "updatedAt": "2026-07-16T05:10:06.501Z"
+  },
+  {
+    "id": "RV-2026-00112",
+    "userId": null,
+    "customer": {
+      "firstName": "გიორგი",
+      "lastName": "მაისურაძე",
+      "phone": "+995582707126",
+      "email": "გიორგი12@example.ge",
+      "city": "თელავი",
+      "address": "ვაჟა-ფშაველას გამზირი 8",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-031",
+        "name": "თეთრი ნიღაბი — Horror Classic",
+        "slug": "white-horror-mask",
+        "image": "/products/rv-031-1.svg",
+        "price": 59,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 118,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 125,
+    "shippingMethod": "თვითგატანა",
+    "paymentMethod": "საბანკო გადარიცხვა",
+    "status": "გაგზავნილი",
+    "createdAt": "2026-07-31T01:52:33.504Z",
+    "updatedAt": "2026-07-31T01:52:33.504Z"
+  },
+  {
+    "id": "RV-2026-00113",
+    "userId": null,
+    "customer": {
+      "firstName": "საბა",
+      "lastName": "გოგოლაძე",
+      "phone": "+995581948361",
+      "email": "საბა13@example.ge",
+      "city": "გორი",
+      "address": "ვაჟა-ფშაველას გამზირი 58",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-016",
+        "name": "Death Note რვეული",
+        "slug": "death-note-notebook",
+        "image": "/products/rv-016-1.svg",
+        "price": 39.9,
+        "quantity": 1
+      },
+      {
+        "productId": "rv-023",
+        "name": "ჯეკ ბეღურას კომპასი",
+        "slug": "jack-sparrow-compass",
+        "image": "/products/rv-023-1.svg",
+        "price": 64.9,
+        "quantity": 1
+      },
+      {
+        "productId": "rv-041",
+        "name": "ფარის კედლის დეკორი",
+        "slug": "shield-wall-decor",
+        "image": "/products/rv-041-1.svg",
+        "price": 79,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 262.8,
+    "shipping": 0,
+    "discount": 0,
+    "promoCode": null,
+    "total": 262.8,
+    "shippingMethod": "თვითგატანა",
+    "paymentMethod": "საბანკო გადარიცხვა",
+    "status": "მიწოდებული",
+    "createdAt": "2026-07-12T10:23:34.875Z",
+    "updatedAt": "2026-07-12T10:23:34.875Z"
+  },
+  {
+    "id": "RV-2026-00114",
+    "userId": null,
+    "customer": {
+      "firstName": "ლუკა",
+      "lastName": "ტაბატაძე",
+      "phone": "+995593840021",
+      "email": "ლუკა14@example.ge",
+      "city": "თელავი",
+      "address": "ვაჟა-ფშაველას გამზირი 6",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-010",
+        "name": "ვარდისფერი საპონი „Paper Street\"",
+        "slug": "paper-street-soap",
+        "image": "/products/rv-010-1.svg",
+        "price": 16.9,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 33.8,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 40.8,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "ბარათი (დემო)",
+    "status": "გაუქმებული",
+    "createdAt": "2026-07-16T01:37:25.332Z",
+    "updatedAt": "2026-07-16T01:37:25.332Z"
+  },
+  {
+    "id": "RV-2026-00115",
+    "userId": null,
+    "customer": {
+      "firstName": "ანა",
+      "lastName": "ბერიძე",
+      "phone": "+995512824576",
+      "email": "ანა15@example.ge",
+      "city": "გორი",
+      "address": "ვაჟა-ფშაველას გამზირი 77",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-008",
+        "name": "ტაილერ დერდენის წითელი ტყავის ქურთუკი",
+        "slug": "tyler-durden-red-jacket",
+        "image": "/products/rv-008-1.svg",
+        "price": 189,
+        "quantity": 2
+      },
+      {
+        "productId": "rv-023",
+        "name": "ჯეკ ბეღურას კომპასი",
+        "slug": "jack-sparrow-compass",
+        "image": "/products/rv-023-1.svg",
+        "price": 64.9,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 507.8,
+    "shipping": 0,
+    "discount": 0,
+    "promoCode": null,
+    "total": 507.8,
+    "shippingMethod": "თვითგატანა",
+    "paymentMethod": "ბარათი (დემო)",
+    "status": "ახალი",
+    "createdAt": "2026-07-11T14:41:45.949Z",
+    "updatedAt": "2026-07-11T14:41:45.949Z"
+  },
+  {
+    "id": "RV-2026-00116",
+    "userId": null,
+    "customer": {
+      "firstName": "ლუკა",
+      "lastName": "ტაბატაძე",
+      "phone": "+995558781119",
+      "email": "ლუკა16@example.ge",
+      "city": "რუსთავი",
+      "address": "ვაჟა-ფშაველას გამზირი 52",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-026",
+        "name": "ჯეკ ბეღურას ბანდანა",
+        "slug": "jack-sparrow-bandana",
+        "image": "/products/rv-026-1.svg",
+        "price": 19.9,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 39.8,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 46.8,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "ბარათი (დემო)",
+    "status": "დამუშავებაში",
+    "createdAt": "2026-07-31T02:55:48.746Z",
+    "updatedAt": "2026-07-31T02:55:48.746Z"
+  },
+  {
+    "id": "RV-2026-00117",
+    "userId": null,
+    "customer": {
+      "firstName": "ანა",
+      "lastName": "ბერიძე",
+      "phone": "+995529264201",
+      "email": "ანა17@example.ge",
+      "city": "თბილისი",
+      "address": "ვაჟა-ფშაველას გამზირი 8",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-018",
+        "name": "L-ის სიმბოლოს ჭიქა",
+        "slug": "l-symbol-mug",
+        "image": "/products/rv-018-1.svg",
+        "price": 21.9,
+        "quantity": 1
+      },
+      {
+        "productId": "rv-014",
+        "name": "Kill Bill — გრაფიკული პოსტერი",
+        "slug": "kill-bill-poster",
+        "image": "/products/rv-014-1.svg",
+        "price": 19.9,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 61.7,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 68.7,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "საბანკო გადარიცხვა",
+    "status": "ახალი",
+    "createdAt": "2026-07-11T01:22:20.843Z",
+    "updatedAt": "2026-07-11T01:22:20.843Z"
+  },
+  {
+    "id": "RV-2026-00118",
+    "userId": null,
+    "customer": {
+      "firstName": "საბა",
+      "lastName": "გოგოლაძე",
+      "phone": "+995536367320",
+      "email": "საბა18@example.ge",
+      "city": "ზუგდიდი",
+      "address": "ვაჟა-ფშაველას გამზირი 64",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-015",
+        "name": "სიმბოლური წითელი ვაშლი",
+        "slug": "death-note-apple",
+        "image": "/products/rv-015-1.svg",
+        "price": 18.9,
+        "quantity": 2
+      },
+      {
+        "productId": "rv-023",
+        "name": "ჯეკ ბეღურას კომპასი",
+        "slug": "jack-sparrow-compass",
+        "image": "/products/rv-023-1.svg",
+        "price": 64.9,
+        "quantity": 1
+      }
+    ],
+    "subtotal": 102.7,
+    "shipping": 7,
+    "discount": 0,
+    "promoCode": null,
+    "total": 109.7,
+    "shippingMethod": "თვითგატანა",
+    "paymentMethod": "ბარათი (დემო)",
+    "status": "დამუშავებაში",
+    "createdAt": "2026-07-13T08:25:40.110Z",
+    "updatedAt": "2026-07-13T08:25:40.110Z"
+  },
+  {
+    "id": "RV-2026-00119",
+    "userId": null,
+    "customer": {
+      "firstName": "ტესტი",
+      "lastName": "მომხმარებელი",
+      "phone": "+995599112233",
+      "email": "test@relicverse.ge",
+      "city": "თბილისი",
+      "address": "ვაჟა-ფშაველას 12, ბ.5",
+      "note": ""
+    },
+    "items": [
+      {
+        "productId": "rv-001",
+        "name": "ფილოსოფიური ქვა",
+        "slug": "philosophers-stone",
+        "image": "/products/rv-001-1.svg",
+        "price": 39.9,
+        "quantity": 1
+      }
+    ],
+    "subtotal": 39.9,
+    "shipping": 7,
+    "discount": 3.99,
+    "promoCode": "RELIC10",
+    "total": 42.91,
+    "shippingMethod": "კურიერი",
+    "paymentMethod": "ნაღდი კურიერთან",
+    "status": "ახალი",
+    "createdAt": "2026-08-03T08:51:09.646Z",
+    "updatedAt": "2026-08-03T08:51:09.646Z"
+  }
+]

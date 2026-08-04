@@ -1,0 +1,138 @@
+{
+  "harry-potter": {
+    "primary": "#c9a227",
+    "secondary": "#5c1a2e",
+    "accent": "#e9c46a",
+    "glow": "rgba(233,196,106,.5)",
+    "surface": "#241016",
+    "font": "serif"
+  },
+  "fight-club": {
+    "primary": "#e0483a",
+    "secondary": "#1a0d0d",
+    "accent": "#f0abfc",
+    "glow": "rgba(224,72,58,.45)",
+    "surface": "#1c0f10",
+    "font": "grunge"
+  },
+  "pirates": {
+    "primary": "#c8963c",
+    "secondary": "#0e2f33",
+    "accent": "#2fb6a8",
+    "glow": "rgba(200,150,60,.45)",
+    "surface": "#102a2c",
+    "font": "serif"
+  },
+  "death-note": {
+    "primary": "#d33a3a",
+    "secondary": "#111013",
+    "accent": "#f5f3ff",
+    "glow": "rgba(211,58,58,.4)",
+    "surface": "#141014",
+    "font": "gothic"
+  },
+  "alice": {
+    "primary": "#8b5cf6",
+    "secondary": "#153447",
+    "accent": "#63d1c0",
+    "glow": "rgba(139,92,246,.45)",
+    "surface": "#1d1633",
+    "font": "serif"
+  },
+  "kill-bill": {
+    "primary": "#f2c230",
+    "secondary": "#171512",
+    "accent": "#e0483a",
+    "glow": "rgba(242,194,48,.45)",
+    "surface": "#1b180f",
+    "font": "bold"
+  },
+  "the-mentalist": {
+    "primary": "#b3452f",
+    "secondary": "#12100e",
+    "accent": "#e8d5b5",
+    "glow": "rgba(179,69,47,.4)",
+    "surface": "#171310",
+    "font": "serif"
+  },
+  "ghibli": {
+    "primary": "#7fc98a",
+    "secondary": "#12303c",
+    "accent": "#f5e6b8",
+    "glow": "rgba(127,201,138,.4)",
+    "surface": "#132b23",
+    "font": "soft"
+  },
+  "marvel": {
+    "primary": "#e23b42",
+    "secondary": "#161a3a",
+    "accent": "#cfd3e6",
+    "glow": "rgba(226,59,66,.45)",
+    "surface": "#1c1220",
+    "font": "bold"
+  },
+  "dc": {
+    "primary": "#3d84e8",
+    "secondary": "#0b1220",
+    "accent": "#cfd8ea",
+    "glow": "rgba(61,132,232,.45)",
+    "surface": "#0e1626",
+    "font": "bold"
+  },
+  "disney": {
+    "primary": "#a58bf0",
+    "secondary": "#141b45",
+    "accent": "#e9c46a",
+    "glow": "rgba(165,139,240,.5)",
+    "surface": "#191742",
+    "font": "serif"
+  },
+  "horror-classics": {
+    "primary": "#b0303a",
+    "secondary": "#0d0a0c",
+    "accent": "#d8d2c8",
+    "glow": "rgba(176,48,58,.45)",
+    "surface": "#160c0f",
+    "font": "gothic"
+  },
+  "smurfs": {
+    "primary": "#49aeee",
+    "secondary": "#123a2a",
+    "accent": "#f2f6ff",
+    "glow": "rgba(73,174,238,.5)",
+    "surface": "#12283a",
+    "font": "soft"
+  },
+  "miss-peregrine": {
+    "primary": "#5f8f8b",
+    "secondary": "#1c211c",
+    "accent": "#c8a959",
+    "glow": "rgba(95,143,139,.4)",
+    "surface": "#18211f",
+    "font": "serif"
+  },
+  "lotr": {
+    "primary": "#d8b45c",
+    "secondary": "#171204",
+    "accent": "#8fa17a",
+    "glow": "rgba(216,180,92,.45)",
+    "surface": "#1c160c",
+    "font": "serif"
+  },
+  "anime": {
+    "primary": "#f07ab0",
+    "secondary": "#221030",
+    "accent": "#63d1c0",
+    "glow": "rgba(240,122,176,.45)",
+    "surface": "#241326",
+    "font": "bold"
+  },
+  "other": {
+    "primary": "#9aa4c8",
+    "secondary": "#141a2c",
+    "accent": "#f0abfc",
+    "glow": "rgba(154,164,200,.4)",
+    "surface": "#151a2c",
+    "font": "soft"
+  }
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "code": "RELIC10",
+    "type": "percent",
+    "value": 10,
+    "minTotal": 0,
+    "maxUses": 500,
+    "used": 38,
+    "expiresAt": "2026-12-31T23:59:59.000Z",
+    "active": true,
+    "description": "10% ფასდაკლება მთელ კალათაზე"
+  },
+  {
+    "code": "MAGIC15",
+    "type": "percent",
+    "value": 15,
+    "minTotal": 80,
+    "maxUses": 300,
+    "used": 12,
+    "expiresAt": "2026-12-31T23:59:59.000Z",
+    "active": true,
+    "description": "15% ფასდაკლება 80 ₾-ზე მეტ შეკვეთაზე"
+  },
+  {
+    "code": "TEEN5",
+    "type": "fixed",
+    "value": 5,
+    "minTotal": 25,
+    "maxUses": 1000,
+    "used": 143,
+    "expiresAt": "2026-12-31T23:59:59.000Z",
+    "active": true,
+    "description": "−5 ₾ 25 ₾-დან ზემოთ"
+  }
+]

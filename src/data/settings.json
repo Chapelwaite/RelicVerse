@@ -1,0 +1,23 @@
+{
+  "siteName": "RelicVerse",
+  "slogan": "შეინახე შენი საყვარელი სამყაროს ნაწილი",
+  "tagline": "ნივთები იმ სამყაროებიდან, რომლებიც არასდროს დაგავიწყდება",
+  "phone": "+995 599 12 34 56",
+  "email": "info@relicverse.ge",
+  "address": "თბილისი, ჭავჭავაძის გამზირი 47",
+  "social": {
+    "facebook": "https://facebook.com/relicverse",
+    "instagram": "https://instagram.com/relicverse",
+    "tiktok": "https://tiktok.com/@relicverse",
+    "youtube": "https://youtube.com/@relicverse"
+  },
+  "shippingFee": 7,
+  "freeShippingThreshold": 120,
+  "currency": "₾",
+  "saleBanner": {
+    "title": "მისტიკური კვირეული",
+    "subtitle": "25%-მდე ფასდაკლება არჩეულ ნივთებზე",
+    "endsAt": "2026-12-31T21:00:00.000Z",
+    "active": true
+  }
+}
